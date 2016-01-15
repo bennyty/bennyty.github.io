@@ -1,30 +1,25 @@
 ---
 layout: page
-title: About
+title: About me
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+My name is Benjamin Espey and I am a sophomore at Rensselaer Polytechnic studying Computer Science. I am excited about the future of technology, scientific discovery, and artificial intelligence / machine learning. This website is a collection of my projects, thoughts, and materials I find interesting.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Feel free to reach out through the links below.
 
-There are currently two themes built on Poole:
+##Social
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
+* [GitHub](https://github.com/bennyty/)
+* [Email](mailto:benjamin.espey@gmail.com)
 
 ## Setup
 
-Some fun facts about the setup of this project include:
+Some fun facts about the setup of this website include:
 
-* Built for [Jekyll](http://jekyllrb.com)
+* Built with [Jekyll](http://jekyllrb.com) and [Hyde](http://hyde.getpoole.com/)
 * Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+* Coded with [vim](http://www.openvim.com/), the largest editing speed improvement ever. Seriously, the command **ci)** (change inside parenthesis) alone has saved so much time.
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+Have questions, suggestions, or a job (please)? Feel free to [email me.](mailto:benjamin.espey@gmail.com)
 
 Thanks for reading!

@@ -7,20 +7,20 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            C'est la C++
+tagline:          'Such is the coding life'
+description:      'A personal website for Benjamin Espey.'
+url:              http://bennyty.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Benjamin Espey'
+  url:            https://github.com/bennyty/
 
-paginate:         5
+paginate:         3
 
 # Custom vars
-version:          2.1.0
+version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/bennyty/
