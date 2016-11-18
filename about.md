@@ -3,7 +3,7 @@ layout: page
 title: About me
 ---
 
-My name is Benjamin Espey and I am a sophomore at Rensselaer Polytechnic studying Computer Science. I am excited about the future of technology, scientific discovery, and artificial intelligence / machine learning. This website is a collection of my projects, thoughts, and materials I find interesting.
+My name is Benjamin Espey and I am a senior studying Computer Science at Rensselaer Polytechnic Institute. I am excited about the future of technology, scientific discovery, cryptography, security, and artificial intelligence / machine learning. This website is a collection of my projects, thoughts, and materials I find interesting.
 
 Feel free to reach out through the links below.
 
