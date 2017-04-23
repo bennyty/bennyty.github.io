@@ -11,6 +11,8 @@ Feel free to reach out through the links below.
 
 * [GitHub](https://github.com/bennyty/)
 * [Email](mailto:benjamin.espey@gmail.com)
+* [GPG Key]({{ site.url }}/public/BenEspey.asc)
+
 
 ## Setup
 
