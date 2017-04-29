@@ -7,10 +7,11 @@ My name is Benjamin Espey and I am a senior studying Computer Science at Renssel
 
 Feel free to reach out through the links below.
 
-##Social
+## Social
 
 * [GitHub](https://github.com/bennyty/)
 * [Email](mailto:benjamin.espey@gmail.com)
+* [SSH Key]({{ site.url }}/public/id_rsa.pub)
 * [GPG Key]({{ site.url }}/public/BenEspey.asc)
 
 
