@@ -3,6 +3,8 @@ layout: page
 title: About me
 ---
 
+![Profile Picture, Ben Espey wearing a dashing red shirt and tie](https://www.gravatar.com/avatar/a0df96bafee3d6ec2623a5d754707dcc)
+
 My name is Benjamin Espey and I am a senior studying Computer Science at Rensselaer Polytechnic Institute. I am excited about the future of technology, scientific discovery, cryptography, security, and artificial intelligence / machine learning. This website is a collection of my projects, thoughts, and materials I find interesting.
 
 Feel free to reach out through the links below.
