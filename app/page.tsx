@@ -9,6 +9,7 @@ import { useTheme } from 'next-themes';
 import KTdle from './KTdle';
 import Link from 'next/link';
 import Script from 'next/script';
+import Head from 'next/head';
 
 export default function Home() {
   const router = useRouter()
@@ -46,7 +47,9 @@ export default function Home() {
   return (
     <>
       {/* Google Adsense */}
-      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3730608814827885" crossOrigin="anonymous" />
+      <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3730608814827885" crossOrigin="anonymous"></script>
+      </Head>
       {/* Google Adsense */}
       <div className="flex flex-col min-h-screen bg-background text-foreground font-sans transition-colors duration-300">
         <header className="w-full flex items-center justify-end py-4 px-8 gap-4 bg-header-bg text-header-text shadow-md transition-colors duration-300">
