@@ -10,19 +10,19 @@ export default function OPTable({ correctOperative, guesses }: { correctOperativ
 
   function renderExact(guess: string, correct: string) {
     return guess === correct
-      ? <span className="text-green-500 font-bold">{guess} ✔</span>
+      ? <span className="text-primary font-bold">{guess} ✔</span>
       : <span>{guess}</span>
   }
   function renderNumSame(guess: string[], correct: string[]) {
     const [same, numSame] = compareArrays(guess.map(getSanitizedWR), correct.map(getSanitizedWR))
     const guessJoin = guess.map(x => x.trim()).filter(x => !!x).join(', ')
     return same
-      ? <span className="text-green-500 font-bold">{guessJoin} ✔</span>
-      : <span>{guessJoin} (<span className={numSame > 0 ? "text-orange-500" : ""}>{numSame}</span>)</span>
+      ? <span className="text-primary font-bold">{guessJoin} ✔</span>
+      : <span>{guessJoin} (<span className={numSame > 0 ? "text-amber-500" : ""}>{numSame}</span>)</span>
   }
   function renderHighLow(guess: number, correct: number) {
     if (guess === correct) {
-      return <span className="text-green-500 font-bold">{guess} ✔</span>
+      return <span className="text-primary font-bold">{guess} ✔</span>
     } else if (guess < correct) {
       return <span>{guess} ↑</span>
     } else {
@@ -32,7 +32,7 @@ export default function OPTable({ correctOperative, guesses }: { correctOperativ
 
   return <table>
     <thead>
-      <tr className={`divide-x divide-gray-500`}>
+      <tr className={`divide-x divide-border`}>
         <th className={`${cellStyles}`}>Operative</th>
         <th className={`${cellStyles}`}>Keywords</th>
         {/* <th>Team size</th> not int he data!! */}
@@ -53,7 +53,7 @@ export default function OPTable({ correctOperative, guesses }: { correctOperativ
     <tbody>
       {ops.map((op) =>
         <tr key={op.opTypeId}
-          className={`${cellStyles} text-center divide-x divide-gray-500`}
+          className={`${cellStyles} text-center divide-x divide-border`}
         >
           <td className={cellStyles}>{renderExact(op.opTypeName, correctOperative.opTypeName)}</td>
           <td className={cellStyles}>{renderNumSame(getKeywords(op), getKeywords(correctOperative))}</td>

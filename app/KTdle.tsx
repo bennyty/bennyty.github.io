@@ -40,7 +40,6 @@ export default function KTdle({ seed }: { seed: string }) {
         gap-8
         min-h-screen
         my-16
-        bg-white dark:bg-black
       ">
     <OPTable correctOperative={correctOperative} guesses={guesses} />
     <div className="flex justify-center">

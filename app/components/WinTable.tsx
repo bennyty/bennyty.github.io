@@ -42,8 +42,8 @@ export default function OPTable({ correctOperative, guesses }: { correctOperativ
     renderNumSame(getWeaponTraits(op), getWeaponTraits(correctOperative))
   ].join(''))
 
-  return <div className="p-4 bg-white dark:bg-black flex flex-col gap-4 max-w-xl w-11/12 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg">
-    <h2 className="text-3xl font-bold text-center text-black dark:text-white">You Win!</h2>
+  return <div className="p-4 bg-surface flex flex-col gap-4 max-w-xl w-11/12 border border-border rounded-lg shadow-lg">
+    <h2 className="text-3xl font-bold text-center text-primary">You Win!</h2>
     <p className="text-center">The correct operative was <strong>{correctOperative.opTypeName}</strong>.</p>
     <p className="text-center">Come back tomorrow for a new operative to guess!</p>
     <div className="flex flex-col items-center">
@@ -53,7 +53,7 @@ export default function OPTable({ correctOperative, guesses }: { correctOperativ
         </div>
       )}
     </div>
-    <button className="mt-4 px-4 py-2 bg-fuchsia-900 text-white rounded cursor-pointer" onClick={() => {
+    <button className="mt-4 px-4 py-2 bg-primary text-surface rounded cursor-pointer font-bold transition-opacity hover:opacity-90" onClick={() => {
       // console.log(strings)
       navigator.clipboard.writeText(`I guessed KTdle today in ${strings.length} guesses\n` + strings.join('\n'))
       alert("Results copied to clipboard!")

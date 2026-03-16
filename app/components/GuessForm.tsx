@@ -58,9 +58,9 @@ export default function GuessForm({ submitGuess, preview, operatives }: GuessFor
 
       <button
         className="lg:px-6 px-1
-          rounded font-medium text-white
+          rounded font-medium text-surface
           whitespace-nowrap
-          bg-green-500 hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+          bg-primary hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 transition-opacity"
           type="submit"
       >
         Submit Guess
