@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Operative } from "../killteamjson";
 import { getSanitizedWR, operatives } from "../Team";
 import { compareArrays, getAbilities, getArchetypes, getKeywords, getWeaponDamages, getWeaponTraits, toNumber } from "../util";
@@ -30,6 +31,12 @@ export default function OPTable({ correctOperative, guesses }: { correctOperativ
     }
   }
 
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   return <table>
     <thead>
       <tr className={`divide-x divide-border`}>
@@ -42,7 +49,7 @@ export default function OPTable({ correctOperative, guesses }: { correctOperativ
         <th className={`${cellStyles}`}>Wounds</th>
         <th className={`${cellStyles}`}>Save</th>
         {/* <th className={`${cellStyles}`}>Base size</th> */}
-        <th className={`${cellStyles} cursor-help`} 
+        <th className={`${cellStyles} cursor-help`}
           title="INCLUDES Faction Abilites due to data limitations">Abilities & Faction Rules</th>
         <th className={`${cellStyles}`}>Weapons</th>
         <th className={`${cellStyles}`}>Weapon damages</th>
@@ -51,7 +58,7 @@ export default function OPTable({ correctOperative, guesses }: { correctOperativ
     </thead>
 
     <tbody>
-      {ops.map((op) =>
+      {isClient && ops.map((op) =>
         <tr key={op.opTypeId}
           className={`${cellStyles} text-center divide-x divide-border`}
         >
