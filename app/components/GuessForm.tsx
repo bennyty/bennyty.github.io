@@ -41,7 +41,6 @@ export default function GuessForm({ submitGuess, preview, operatives }: GuessFor
           renderInput={(params) => (
             <TextField {...params}
               name="operative"
-              type="search"
               placeholder="Guess an Operative"
             />
           )}
@@ -61,7 +60,7 @@ export default function GuessForm({ submitGuess, preview, operatives }: GuessFor
           rounded font-medium text-surface
           whitespace-nowrap
           bg-primary hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 transition-opacity"
-          type="submit"
+        type="submit"
       >
         Submit Guess
       </button>
@@ -70,12 +69,12 @@ export default function GuessForm({ submitGuess, preview, operatives }: GuessFor
           rounded font-medium text-white
           whitespace-nowrap
           bg-red-500 hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
-          onClick={(e) => {
-            e.preventDefault()
-            if (confirm("Really give up?")) {
-              submitGuess(GiveUpSymbol)
-            }
-          }}
+        onClick={(e) => {
+          e.preventDefault()
+          if (confirm("Really give up?")) {
+            submitGuess(GiveUpSymbol)
+          }
+        }}
       >
         Give Up
       </button>
