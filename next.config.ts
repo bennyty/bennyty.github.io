@@ -10,7 +10,7 @@ const commitHash = child_process
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/KTdle",
+  basePath: "",
   env: {
     // add the package.json version and git hash to the environment
     APP_VERSION: pkg.version,
